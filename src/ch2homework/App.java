@@ -2,11 +2,11 @@ package ch2homework;
 
 import java.util.Scanner;
 
-
 public class App {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Calculator calculator = new Calculator();
+
         int num1;
         int num2;
         String oper = "";
@@ -54,15 +54,3 @@ public class App {
         System.out.println(calculator.getResults());
     }
 }
-/*            switch (cla) {
-                case '+' -> result += num2;
-                case '-' -> result -= num2;
-                case '*' -> result *= num2;
-                case '/' -> {
-                    if (result == 0 || num2 == 0) {
-                        System.out.println("0으로 나눌 수 없습니다.");
-                    } else {
-                        result /= num2;
-                    }
-                }
-                default -> System.out.println("사칙연산 재입력");*/
